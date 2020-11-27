@@ -1,0 +1,137 @@
+.cta {
+  text-align: center;
+  padding: 40px;
+  //background: rgb(28,28,28);
+  background: linear-gradient(0deg, rgba(28, 28, 28, 1) 0%, rgba(63, 63, 63, 1) 100%);
+  // background: white url(/static/img/procreate-bg.jpg) no-repeat center;
+  background: #1e2329;
+  background: white url(/img/bg-no-frame.png) no-repeat center;
+  background-size: cover;
+  color: white;
+
+  position: relative;
+
+  .logo {
+    margin: auto;
+    width: 180px;
+    border-radius: 50%;
+  }
+  h1 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 31px;
+    font-weight: 100;
+    margin: 0;
+    .second-line {
+      font-size: 30px;
+    }
+  }
+  .tagline {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+
+
+  .video {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.cta-form {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 10px;
+  input {
+    text-align: center;
+    width: 100%;
+    border: none;
+    outline: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 5px;
+    margin-top: 10px;
+  }
+}
+
+.btn-cta {
+  background: linear-gradient(to bottom, #ff6500, #f84200);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  &:hover {
+    color: white;
+    background: linear-gradient(to bottom, #ff6e0d, #ff4907);
+  }
+  svg {
+    // for arrow icon inside the article cta button
+    margin: 0 10px;
+    path {
+      fill: white;
+    }
+  }
+}
+
+.skills {
+  background: #1e2329 url(/img/bg-no-frame.png) no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+  h2 {
+    font-size: 1.2em;
+  }
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    .skill {
+      text-align: center;
+      flex-basis: calc(100% / 2);
+      margin-top: 20px;
+
+      @media (max-width: 420px) {
+        flex-basis: calc(100%);
+      }
+      font-size: 0.8em;
+      h2 {
+        font-size: 2em;
+        color: #f66303;
+        font-weight: 100;
+      }
+      .icon {
+        svg {
+          font-size: 64px;
+          path {
+            fill: white;
+          }
+        }
+        background: #f66303;
+        background: #f94701;
+        background: linear-gradient(to bottom, #ff6500, #f84200);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
+    }
+  }
+}
